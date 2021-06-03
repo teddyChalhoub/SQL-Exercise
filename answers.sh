@@ -54,7 +54,7 @@ WHERE Role = "Graphic Designer";
 ### Count & Filter:
 
 
-1. SELECT students.name,max(Points) FROM students;
+1. SELECT name FROM students WHERE points = (SELECT max(points) FROM students);
 
 2. SELECT avg(Points) FROM students;
 
